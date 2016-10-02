@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'api_response/version'
+require 'rails_api_response/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rails_api_response"
-  spec.version       = ApiResponse::VERSION
+  spec.version       = RailsApiResponse::VERSION
   spec.authors       = ["Vinh Chau"]
   spec.email         = ["cpvinh@gmail.com"]
 

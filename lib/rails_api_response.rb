@@ -1,4 +1,4 @@
-require "api_response/version"
+require "rails_api_response/version"
 
 module Core
   module ControllerHelpers
@@ -7,6 +7,6 @@ module Core
   end
 end
 
-module ApiResponse
+module RailsApiResponse
   # Your code goes here...
 end
