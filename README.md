@@ -20,11 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-Add the line `include RailsApiResponse::ControllerHelpers::Responses` to the controller where you want to you response format. (Recommended: base or application controller)
+Add the line `include RailsApiResponse::ControllerHelpers::Responses` to the controller where you want to you response format. (Recommended: base or application controller).
 
-Response success: `respond_success message: "Create user successfully", data: {}`
-Response error: `respond_error message: "Create user failed", data: {}` or `respond_error instance: @user, data: {}` (with instance param, the format will be got from errors and full message from instance
-Response with customer code: `respond_json code: 200, message: "", data: {}`
+Response success: `respond_success message: "Create user successfully", data: {}`.
+
+Response error: `respond_error message: "Create user failed", data: {}` or `respond_error instance: @user, data: {}` (with instance param, the format will be got from errors and full message from instance.
+
+Response with customer code: `respond_json code: 200, message: "", data: {}`.
 
 ## Development
 
