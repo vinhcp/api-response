@@ -28,6 +28,8 @@ Response error: `respond_error message: "Create user failed", data: {}` or `resp
 
 Response with customer code: `respond_json code: 200, message: "", data: {}`.
 
+The last format will be always `{ code: 200, metadata: { message: '' }, data: {} }`
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
