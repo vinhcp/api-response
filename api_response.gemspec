@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'api_response/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "api_response"
+  spec.name          = "rails_api_response"
   spec.version       = ApiResponse::VERSION
   spec.authors       = ["Vinh Chau"]
   spec.email         = ["cpvinh@gmail.com"]

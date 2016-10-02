@@ -8,8 +8,8 @@ TODO: Delete this and the text above, and describe your gem
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'api_response'
+```rails
+gem 'rails_api_response'
 ```
 
 And then execute:
@@ -18,7 +18,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install api_response
+    $ gem install rails_api_response
 
 ## Usage
 
