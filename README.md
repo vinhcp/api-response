@@ -2,8 +2,6 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rails_api_response`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add the line `include RailsApiResponse::ControllerHelpers::Responses` to the controller where you want to you response format. (Recommended: base or application controller).
+
+Response success: `respond_success message: "Create user successfully", data: {}`.
+
+Response error: `respond_error message: "Create user failed", data: {}` or `respond_error instance: @user, data: {}` (with instance param, the format will be got from errors and full message from instance.
+
+Response with customer code: `respond_json code: 200, message: "", data: {}`.
+
+The last format will be always `{ code: 200, metadata: { message: '' }, data: {} }`
 
 ## Development
 
