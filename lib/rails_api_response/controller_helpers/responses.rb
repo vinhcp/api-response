@@ -12,6 +12,10 @@ module RailsApiResponse
         render json: ResponseTemplate.error(metadata, data)
       end
 
+      def respond_exception_error(exception:, data: {})
+        render json: ResponseTemplate.error(error_exception_metadata(exception), data)
+      end
+
       def respond_create_success(message: "", data: {})
         render json: ResponseTemplate.create_success(message_metadata(message), data)
       end
@@ -42,6 +46,14 @@ module RailsApiResponse
         {
             message: instance.errors.full_messages,
             errors: errors
+        }
+      end
+
+      # Convert exception to metadata
+      def error_exception_metadata(exception)
+        {
+            message: exception.message,
+            error_details: exception.backtrace
         }
       end
 
