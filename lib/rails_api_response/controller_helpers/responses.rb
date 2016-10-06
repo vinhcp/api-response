@@ -44,7 +44,8 @@ module RailsApiResponse
           }
         end
         {
-            message: instance.errors.full_messages,
+            message: instance.errors.full_messages.join(", "),
+            messages: instance.errors.full_messages,
             errors: errors
         }
       end
